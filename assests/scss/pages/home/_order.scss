@@ -1,75 +1,104 @@
 .order-section {
-    background-image: url(../../../../assests/img/order-bg.jpg);
+    background: url(../../../../assests/img/order-bg.jpg);
     background-size: cover;
+
     .order-wrapper {
         position: relative;
-        padding: 100px 100px;
-        .slider-for {
-            width: 100%;
-            height: 500px;
-            img {
-                width: 100%;
-                height: 500px;
-                object-fit: cover;
-            }
-        }
+        padding: 140px 218px 110px 113px;
+
         .order-cols {
             padding: 0;
         }
-        .order-content-wrapper {
-            background-color: $white;
-            display: flex;
-            height: 100%;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 85px 65px 30px;
-            .order-content {
-                display: flex;
-                flex-direction: column;
-                h2 {
-                    padding-bottom: 5px;
-                }
-                p {
-                    margin-right: 120px;
-                    font-family: $proxima;
-                    padding-bottom: 45px;
-                    letter-spacing: 1px;
-                }
-            }
-            .slider-nav {
+
+        .order-img-wd {
+            width: calc(50% - 60px);
+        }
+
+        .order-img {
+            .foods-img {
                 img {
+                    width: 100%;
+                    height: 510px;
                     object-fit: cover;
                 }
             }
         }
-        .timing {
-            background: url(../../../../assests/img/order-time.jpg);
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            top: 65px;
-            right: 0;
-            text-align: center;
-            padding: 30px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            h6 {
-                padding: 0;
-                margin: 0;
+
+        .order-content-wd {
+            width: calc(50% + 60px);
+        }
+
+        .order-content {
+            background: url(../../../../assests/img/windmill.png);
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            background-position-x: right;
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 70px 60px 40px;
+
+            .order-img-details {
+                .foods-description {
+                    h2 {
+                        margin-bottom: 6px;
+                    }
+
+                    h6 {
+                        padding-bottom: 50px;
+                    }
+
+                    p {
+                        letter-spacing: 1px;
+                    }
+                }
             }
+
+            .order-small-preview {
+                .order-img-small {
+                    img {
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .order-time-taken {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        background: url(../../../../assests/img/order-time.jpg);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        .ready-time {
+            text-align: center;
+
+            h6 {
+                padding: 35px 0 0;
+                margin: -10px;
+            }
+
             span {
                 font-size: 90px;
                 font-weight: 700;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
                 color: $crayola;
             }
+
             p {
+                font-size: 18px;
                 position: absolute;
-                bottom: 10px;
+                top: 160px;
                 left: 50%;
                 transform: translate(-50%, -50%);
+
             }
         }
     }

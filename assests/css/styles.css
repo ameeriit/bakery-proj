@@ -13087,78 +13087,80 @@ body.expand .site-header .site-wrapper .ham-menu .ham-line:last-child {
 }
 
 .order-section {
-  background-image: url(../../../../assests/img/order-bg.jpg);
+  background: url(../../../../assests/img/order-bg.jpg);
   background-size: cover;
 }
 .order-section .order-wrapper {
   position: relative;
-  padding: 100px 100px;
-}
-.order-section .order-wrapper .slider-for {
-  width: 100%;
-  height: 500px;
-}
-.order-section .order-wrapper .slider-for img {
-  width: 100%;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding: 140px 218px 110px 113px;
 }
 .order-section .order-wrapper .order-cols {
   padding: 0;
 }
-.order-section .order-wrapper .order-content-wrapper {
-  background-color: #ffffff;
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 85px 65px 30px;
+.order-section .order-wrapper .order-img-wd {
+  width: calc(50% - 60px);
 }
-.order-section .order-wrapper .order-content-wrapper .order-content {
-  display: flex;
-  flex-direction: column;
-}
-.order-section .order-wrapper .order-content-wrapper .order-content h2 {
-  padding-bottom: 5px;
-}
-.order-section .order-wrapper .order-content-wrapper .order-content p {
-  margin-right: 120px;
-  font-family: proxima-nova-rg;
-  padding-bottom: 45px;
-  letter-spacing: 1px;
-}
-.order-section .order-wrapper .order-content-wrapper .slider-nav img {
+.order-section .order-wrapper .order-img .foods-img img {
+  width: 100%;
+  height: 510px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.order-section .order-wrapper .timing {
+.order-section .order-wrapper .order-content-wd {
+  width: calc(50% + 60px);
+}
+.order-section .order-wrapper .order-content {
+  background: url(../../../../assests/img/windmill.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 70px 60px 40px;
+}
+.order-section .order-wrapper .order-content .order-img-details .foods-description h2 {
+  margin-bottom: 6px;
+}
+.order-section .order-wrapper .order-content .order-img-details .foods-description h6 {
+  padding-bottom: 50px;
+}
+.order-section .order-wrapper .order-content .order-img-details .foods-description p {
+  letter-spacing: 1px;
+}
+.order-section .order-wrapper .order-content .order-small-preview .order-img-small img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.order-section .order-time-taken {
+  position: absolute;
+  top: 100px;
+  right: 100px;
   background: url(../../../../assests/img/order-time.jpg);
+  background-size: cover;
   width: 200px;
   height: 200px;
-  position: absolute;
-  top: 65px;
-  right: 0;
-  text-align: center;
-  padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.order-section .order-wrapper .timing h6 {
-  padding: 0;
-  margin: 0;
+.order-section .order-time-taken .ready-time {
+  text-align: center;
 }
-.order-section .order-wrapper .timing span {
+.order-section .order-time-taken .ready-time h6 {
+  padding: 35px 0 0;
+  margin: -10px;
+}
+.order-section .order-time-taken .ready-time span {
   font-size: 90px;
   font-weight: 700;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #dfc691;
 }
-.order-section .order-wrapper .timing p {
+.order-section .order-time-taken .ready-time p {
+  font-size: 18px;
   position: absolute;
-  bottom: 10px;
+  top: 160px;
   left: 50%;
   transform: translate(-50%, -50%);
 }/*# sourceMappingURL=styles.css.map */
