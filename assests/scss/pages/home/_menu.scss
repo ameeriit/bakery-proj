@@ -1,0 +1,55 @@
+.menu-section {
+    // position: relative;
+    img {
+        // position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-wrapper {
+        padding: 80px 0 30px 0;
+        .menu-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .breakfast {
+                font-size: 60px;
+                color: $white;
+            }
+            .breakfast-subtitle {
+                color: $khaki;
+                font-size: 18px;
+                padding-bottom: 48px;
+            }
+            .food-menu {
+                padding: 0;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 30px;
+                    list-style-type: none;
+                    &:before {
+                        content: url(../../../../assests/img/breakfast-crown.png);
+                    }
+                    &:first-child {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                    .food-description {
+                        font-size: 16px;
+                        color: $white;
+                        margin-bottom: 6px;
+                    }
+                    .menu-price {
+                        font-size: 36px;
+                        color: $crayola;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "scriptina-alternates";
+    src: url("../../font/Scriptina-Alternates.woff2") format("woff2"),
+        url("../../assests/font/Scriptina-Alternates.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "scriptina";
+    src: url("../../assests/font/Scriptina.woff2") format("woff2"),
+        url("../../assests/font/Scriptina.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "proxima-nova-rg";
+    src: url("../../assests/font/ProximaNova-Regular.woff2") format("woff2"),
+        url("../../assests/font/ProximaNova-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "alegreya";
+    src: url("../../assests/font/Alegreya-Regular.woff2") format("woff2"),
+        url("../../assests/font/Alegreya-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "alegreya";
+    src: url("../../assests/font/Alegreya-Bold.woff2") format("woff2"),
+        url("../../assests/font/Alegreya-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "playfair-display";
+    src: url("../../assests/font/PlayfairDisplay-Regular.woff2") format("woff2"),
+        url("../../assests/font/PlayfairDisplay-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "playfair-display";
+    src: url("../../assests/font/PlayfairDisplay-Bold.woff2") format("woff2"),
+        url("../../assests/font/PlayfairDisplay-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

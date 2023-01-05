@@ -1,0 +1,23 @@
+.container {
+    max-width: 1284px;
+}
+
+.logo {
+    color: $white;
+    text-decoration: none;
+    font-family: $scriptina;
+    font-size: 30px;
+    letter-spacing: 9px;
+    transition: 0.3s all;
+    @include breakpoint(medium) {
+        font-size: 24px;
+    }
+    &:hover{
+        color: $light-french-beige;
+    }
+}
+
+
+// *{
+//     border: 1px solid red;
+// }

@@ -1,0 +1,30 @@
+/* abstract */
+@import '../../assests/scss/abstract/mixins';
+@import '../../assests/scss/abstract/variables';
+
+/* vendor */
+@import '../../assests/scss/vendors/boostrap';
+@import '../../assests/scss/vendors/slick';
+@import '../../assests/scss/vendors/swiper';
+
+/* base */
+@import "../../assests/scss/base/font";
+@import "../../assests/scss/base/base";
+@import '../../assests/scss/base/typography';
+
+/* layout */
+@import '../../assests/scss/layout/button';
+@import '../../assests/scss/layout/common';
+
+
+/* components */
+@import '../../assests/scss/components/header';
+@import '../../assests/scss/components/footer';
+
+
+/* pages */
+@import '../../assests/scss/pages/home/banner';
+@import '../../assests/scss/pages/home/intro';
+@import '../../assests/scss/pages/home/menu';
+@import '../../assests/scss/pages/home/order';
+

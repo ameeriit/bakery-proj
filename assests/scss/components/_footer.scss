@@ -1,0 +1,86 @@
+.site-footer {
+    padding: 65px 0;
+    background-color: $site-bg;
+    .footer-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint(small) {
+            flex-direction: column;
+        }
+        .footer-menu {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid $btn-border;
+            border-bottom: 1px solid $btn-border;
+            li {
+                padding: 25px 35px;
+                position: relative;
+                @include breakpoint(wider) {
+                    padding: 20px 29px;
+                }
+                @include breakpoint(wide) {
+                    padding: 15px;
+                }
+                @include breakpoint(medium) {
+                    padding: 10px 10px;
+                }
+                @include breakpoint(small) {
+                    padding: 10px 25px;
+                }
+                @include breakpoint(extrasmall){
+                    padding: 10px 15px;
+                }
+                @include breakpoint(iPhone5){
+                    padding: 5px;
+                }
+                &:after {
+                    content: "~";
+                    position: absolute;
+                    color: $dark-liver;
+                    left: calc(100% - 4px);
+                }
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                list-style-type: none;
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $dark-liver;
+                    letter-spacing: 3.5px;
+                    padding: 5px;
+                    &:hover {
+                        color: white;
+                        background-color: $dark-liver;
+                        outline: 1px solid $light-french-beige;
+                    }
+                    @include breakpoint(wide) {
+                        font-size: 12px;
+                    }
+                    @include breakpoint(medium) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .logo {
+            padding: 0 45px;
+            color: $dark-liver;
+            &:hover{
+                color: $light-french-beige;
+            }
+            @include breakpoint(medium) {
+                padding: 0 5px;
+            }
+            @include breakpoint(small) {
+                padding: 15px 5px;
+            }
+        }
+    }
+}
