@@ -1,4 +1,4 @@
-.main-btn{
+.main-btn {
     display: inline-block;
     text-decoration: none;
     padding: 15px 54px;
@@ -9,12 +9,37 @@
     color: $white;
     background-color: $dark-liver;
     opacity: 0.5;
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
         padding: 7px 27px;
     }
-    &:hover{
+    &:hover {
         background-color: #895438d6;
         color: $white;
-        opacity: 1
+        opacity: 1;
     }
+}
+
+.card-btn {
+    text-decoration: none;
+    color: $cafeau-laita;
+    text-transform: uppercase;
+    border: 1px solid $btn-border;
+    padding: 10px 60px;
+    background: transparent;
+    &:hover{
+        background-color: $cafeau-laita;
+        color: $white;
+    }
+}
+
+
+.receipe-btn{
+    color: $crayola;
+    background-color: $white;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 1px dashed $crayola;
 }

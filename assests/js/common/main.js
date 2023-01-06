@@ -50,8 +50,20 @@ var supportSVG = {
 
 /* swiper cards */
 var swiper = new Swiper(".mySwiper", {
-  effect: "cards",
+  
+  effect: "coverflow",
   grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 380,
+    depth: 100,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
 
 /* slick top */
@@ -67,6 +79,26 @@ $(".slider-nav").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: ".slider-for",
-  arrows: false,
+  arrows: true,
   dots: false,
+});
+
+
+/* special section sync slider */
+
+$('.slider-main').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-primary'
+});
+$('.slider-primary').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-main',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  vertical: true,
 });
