@@ -12367,7 +12367,7 @@ h2 {
     font-size: 35px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   h2 {
     font-size: 24px;
   }
