@@ -40,8 +40,12 @@
                 .nav-menu {
                     padding-right: 105px;
 
+                    @include breakpoint(wider) {
+                        padding-right: 55px;
+                    }
+
                     @include breakpoint(wide) {
-                        padding-right: 35px;
+                        padding-right: 0px;
                     }
 
                     .menu {

@@ -12404,6 +12404,7 @@ h6 {
   text-transform: uppercase;
   color: #a47d5e;
   padding-bottom: 58px;
+  letter-spacing: 1px;
   /* Large Devices, Wide Screens */
   /* Large Devices, Wide Screens */
   /* Large Devices, Wide Screens */
@@ -12462,7 +12463,7 @@ h6 {
   color: #ffffff;
 }
 
-.receipe-btn {
+.recipe-btn {
   color: #dfc691;
   background-color: #ffffff;
   font-size: 18px;
@@ -12538,10 +12539,16 @@ h6 {
 .site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu {
   padding-right: 105px;
   /* Large Devices, Wide Screens */
+  /* Large Devices, Wide Screens */
+}
+@media (max-width: 1440px) {
+  .site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu {
+    padding-right: 55px;
+  }
 }
 @media (max-width: 1199px) {
   .site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu {
-    padding-right: 35px;
+    padding-right: 0px;
   }
 }
 .site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu .menu {
@@ -13430,17 +13437,16 @@ body.expand .site-header .site-wrapper .ham-menu .ham-line:last-child {
   position: absolute;
   top: -120px;
   left: 0;
-  width: 290px;
+  width: 295px;
   text-align: center;
   padding: 5px;
-  margin-left: 30px;
 }
 .special-section .special-wrapper .ingrediant .slick-list {
   height: 720px !important;
   padding: 20px 0px !important;
 }
-.special-section .special-wrapper .ingrediant .slick-slide {
-  width: 290px;
+.special-section .special-wrapper .ingrediant .slick-list .slick-slide {
+  width: 295px;
 }
 .special-section .special-wrapper .ingrediant .ingrediant-description {
   padding-bottom: 20px;
@@ -13449,31 +13455,54 @@ body.expand .site-header .site-wrapper .ham-menu .ham-line:last-child {
   margin: 0 auto;
   padding-bottom: 10px;
 }
+.special-section .special-wrapper .ingrediant .ingrediant-description h3 {
+  color: #a47d5e;
+  font-weight: 700;
+}
 .special-section .special-wrapper .ingrediant .ingrediant-description p {
+  font-family: proxima-nova-rg;
   letter-spacing: 1px;
 }
-.special-section .special-wrapper .special-showcase .slider-main {
-  width: 820px;
+.special-section .special-wrapper .special-showcase {
+  width: 840px;
+  height: 560px;
+  margin-right: 10px;
   margin-left: auto;
+  position: relative;
 }
-.special-section .special-wrapper .special-showcase .slider-main .special-img {
+.special-section .special-wrapper .special-showcase .slick-slide .special-img {
   border: 10px solid #ffffff;
+  width: 840px;
+  height: 560px;
 }
-.special-section .special-wrapper .special-showcase .slider-main .special-img img {
+.special-section .special-wrapper .special-showcase .slick-slide .special-img img {
   width: 100%;
-  height: 510px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.special-section .special-wrapper .special-showcase .recipe-btn {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
 }
 .special-section .special-wrapper .special-timing {
   position: absolute;
   top: -20px;
-  right: 8px;
-  height: 100%;
+  right: 20px;
+  height: 602px;
   width: 200px;
+  /* Large Devices, Wide Screens */
 }
-.special-section .special-wrapper .special-timing .slick-slide {
-  width: 210px;
+@media (max-width: 1199px) {
+  .special-section .special-wrapper .special-timing {
+    right: 90px;
+    width: 150px;
+    height: 452px;
+  }
+}
+.special-section .special-wrapper .special-timing .special-time-wrapper {
+  width: 100%;
 }
 .special-section .special-wrapper .special-timing .special-time-wrapper .time {
   background-color: #ffffff;
@@ -13482,24 +13511,49 @@ body.expand .site-header .site-wrapper .ham-menu .ham-line:last-child {
   height: 200px;
   text-align: center;
   position: relative;
+  /* Large Devices, Wide Screens */
+}
+@media (max-width: 1199px) {
+  .special-section .special-wrapper .special-timing .special-time-wrapper .time {
+    width: 150px;
+    height: 150px;
+  }
 }
 .special-section .special-wrapper .special-timing .special-time-wrapper .time h6 {
+  font-size: 18px;
   padding: 35px 0 0;
-  margin: -10px;
 }
 .special-section .special-wrapper .special-timing .special-time-wrapper .time span {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
-  color: #dfc691;
+  color: #56534c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 8px;
 }
 .special-section .special-wrapper .special-timing .special-time-wrapper .time p {
+  color: #979285;
+  font-weight: 700;
   font-size: 18px;
+  letter-spacing: 1px;
   position: absolute;
   top: 160px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.special-section .special-wrapper .special-timing .special-time-wrapper .time:first-child {
+  margin-bottom: 2px;
+}
 .special-section .special-wrapper .special-timing .special-time-wrapper .time:last-child {
   opacity: 1;
   background: url(../../../../assests/img/order-time.jpg);
+}
+.special-section .special-wrapper .special-timing .special-time-wrapper .time:last-child span {
+  font-size: 90px;
+  color: #dfc691;
+}
+.special-section .special-wrapper .special-timing .special-time-wrapper .time:last-child p {
+  top: 165px;
 }/*# sourceMappingURL=styles.css.map */

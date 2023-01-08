@@ -52,6 +52,7 @@ h6{
     text-transform: uppercase;
     color: $cafeau-laita;
     padding-bottom: 58px;
+    letter-spacing: 1px;
     @include breakpoint(medium){
         font-size: 10px;
     }
