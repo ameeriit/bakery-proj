@@ -12600,6 +12600,27 @@ h6 {
   background-color: #56534c;
   outline: 1px solid #c9b176;
 }
+.site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu .menu li:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+.site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu .menu li .sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  padding: 0;
+  background-color: rgba(86, 83, 76, 0.8392156863);
+}
+.site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu .menu li .sub-menu li {
+  outline: 1px solid #c9b176;
+  padding: 5px 0;
+}
+.site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu .menu li .sub-menu li:after {
+  display: none;
+}
+.site-header .site-wrapper .nav-wrapper .nav-bar .nav-menu .menu li .sub-menu li:after a:hover {
+  outline: none;
+}
 .site-header .site-wrapper .nav-wrapper .nav-bar .social-media-icons .social-icons {
   padding: 0 12.5px;
 }

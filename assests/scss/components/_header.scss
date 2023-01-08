@@ -7,17 +7,15 @@
     background-color: rgba(0, 0, 0, 0.4);
     padding: 15px 0;
 
-
     .site-wrapper {
         .nav-wrapper {
             display: flex;
             justify-content: space-between;
 
             .logo {
-                
                 border-radius: 30px;
                 transition: 0.3s all;
-                &:hover{
+                &:hover {
                     color: $light-french-beige;
                 }
             }
@@ -84,7 +82,8 @@
                             &:last-child {
                                 padding-right: 43px;
 
-                                @include breakpoint(wide) {}
+                                @include breakpoint(wide) {
+                                }
 
                                 &:after {
                                     display: none;
@@ -102,6 +101,29 @@
                                 &:hover {
                                     background-color: $dark-liver;
                                     outline: 1px solid $light-french-beige;
+                                }
+                            }
+                            &:hover .sub-menu {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            .sub-menu {
+                                display: none;
+                                position: absolute;
+                                z-index: 100;
+                                padding: 0;
+                                background-color: #56534cd6;
+                                li {
+                                    outline: 1px solid $light-french-beige;
+                                    padding: 5px 0;
+                                    &:after {
+                                        display: none;
+                                        a {
+                                            &:hover {
+                                                outline: none;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
