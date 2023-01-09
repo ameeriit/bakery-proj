@@ -42,4 +42,8 @@
     text-transform: uppercase;
     padding: 15px 30px;
     border: 1px dashed $crayola;
+    @include breakpoint(small){
+        font-size: 12px;
+        padding: 7px 15px;
+    }
 }

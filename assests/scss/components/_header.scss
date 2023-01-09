@@ -35,6 +35,10 @@
                     left: 100%;
                     background-color: #3a2012f7;
                     transition: 0.3s;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    color: black;
                 }
 
                 .nav-menu {
@@ -47,11 +51,19 @@
                     @include breakpoint(wide) {
                         padding-right: 0px;
                     }
+                    @include breakpoint(medium) {
+                        padding: 0;
+                    }
 
                     .menu {
                         display: flex;
                         padding: 0;
                         margin: 0;
+                        @include breakpoint(medium) {
+                            margin-top: 100px;
+                            align-items: center;
+                            flex-direction: column;
+                        }
 
                         li {
                             position: relative;
@@ -74,6 +86,7 @@
                             }
 
                             @include breakpoint(medium) {
+                                padding: 15px 0;
                                 &:after {
                                     display: none;
                                 }
@@ -101,6 +114,9 @@
                                 letter-spacing: 4.5px;
                                 transition: 0.3s all;
                                 padding: 5px;
+                                @include breakpoint(medium) {
+                                    font-size: 24px;
+                                }
 
                                 &:hover {
                                     background-color: $dark-liver;
@@ -122,11 +138,15 @@
                                     padding: 5px 0;
                                     &:after {
                                         display: none;
-                                        a {
-                                            &:hover {
-                                                outline: none;
-                                            }
+                                    }
+                                    a {
+                                        &:hover {
+                                            background-color: unset;
+                                            outline: none;
                                         }
+                                    }
+                                    &:hover {
+                                        background-color: $dark-liver;
                                     }
                                 }
                             }
@@ -135,6 +155,9 @@
                 }
 
                 .social-media-icons {
+                    @include breakpoint(medium) {
+                        margin-bottom: 50px;
+                    }
                     .social-icons {
                         padding: 0 12.5px;
 
@@ -198,44 +221,17 @@
 
 /* expand for hamburger */
 body {
-    &.expand {
+    &.expand-menu {
         .site-header {
             .site-wrapper {
                 .nav-wrapper {
                     .nav-bar {
                         @include breakpoint(medium) {
-                            align-items: center;
-                            justify-content: space-evenly;
-                            flex-direction: column;
                             left: 0;
-                            color: black;
                             opacity: 1;
-                        }
-
-                        .nav-menu {
-                            padding: 0;
-
-                            .menu {
-                                margin-top: 100px;
-                                align-items: center;
-                                flex-direction: column;
-
-                                li {
-                                    padding: 15px 0;
-
-                                    a {
-                                        font-size: 24px;
-                                    }
-                                }
-                            }
-                        }
-
-                        .social-media-icons {
-                            margin-bottom: 50px;
                         }
                     }
                 }
-
                 .ham-menu {
                     .ham-line {
                         &:nth-child(1) {

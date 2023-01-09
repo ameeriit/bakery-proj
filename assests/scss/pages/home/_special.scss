@@ -19,13 +19,36 @@
             width: 295px;
             text-align: center;
             padding: 5px;
+            @include breakpoint(wide) {
+                width: 255px;
+                margin-top: 70px;
+            }
+            @include breakpoint(medium) {
+                top: 380px;
+            }
+            @include breakpoint(small) {
+                top: 280px;
+            }
+            @include breakpoint(smaller){
+                width: 180px;
+                top: 180px;
+            }
 
             .slick-list {
                 height: 720px !important;
                 padding: 20px 0px !important;
+                @include breakpoint(wide) {
+                    height: 570px !important;
+                }
+                @include breakpoint(medium) {
+                    height: 100% !important;
+                }
 
                 .slick-slide {
                     width: 295px;
+                    @include breakpoint(wide) {
+                        width: 255px;
+                    }
                 }
             }
 
@@ -33,34 +56,73 @@
                 padding-bottom: 20px;
 
                 img {
+                    width: 100px;
                     margin: 0 auto;
                     padding-bottom: 10px;
+                    @include breakpoint(wide) {
+                        width: 60px;
+                    }
+                    @include breakpoint(smaller){
+                        width: 40px;
+                    }
                 }
 
                 h3 {
                     color: $cafeau-laita;
                     font-weight: 700;
+                    @include breakpoint(medium) {
+                        display: none;
+                    }
                 }
 
                 p {
                     font-family: $proxima;
                     letter-spacing: 1px;
+                    @include breakpoint(medium) {
+                        display: none;
+                    }
                 }
             }
         }
 
         .special-showcase {
             width: 840px;
-            height: 560px;
+            height: 562px;
             margin-right: 10px;
             margin-left: auto;
             position: relative;
+            @include breakpoint(wide) {
+                width: 650px;
+                height: 452px;
+            }
+            @include breakpoint(medium) {
+                width: 100%;
+            }
+            @include breakpoint(small) {
+                height: 350px;
+            }
+            @include breakpoint(smaller) {
+                height: 250px;
+            }
 
             .slick-slide {
                 .special-img {
                     border: 10px solid $white;
                     width: 840px;
-                    height: 560px;
+                    height: 562px;
+                    @include breakpoint(wide) {
+                        width: 650px;
+                        height: 452px;
+                    }
+                    @include breakpoint(medium) {
+                        width: 100%;
+                    }
+                    @include breakpoint(small) {
+                        height: 350px;
+                    }
+                    @include breakpoint(smaller) {
+                        height: 250px;
+                    }
 
                     img {
                         width: 100%;
@@ -83,10 +145,25 @@
             right: 20px;
             height: 602px;
             width: 200px;
-            @include breakpoint(wide){
-                right: 90px;
-                width: 150px;
-                height: 452px;
+            @include breakpoint(wide) {
+                top: -15px;
+                right: 20px;
+                width: 160px;
+                height: 480px;
+            }
+            @include breakpoint(medium) {
+                right: 10px;
+                width: 160px;
+                height: 480px;
+            }
+            @include breakpoint(small) {
+                top: -7px;
+                width: 120px;
+                height: 360px;
+            }
+            @include breakpoint(smaller) {
+                width: 85px;
+                height: 255px;
             }
 
             .special-time-wrapper {
@@ -100,14 +177,28 @@
                     position: relative;
 
                     @include breakpoint(wide) {
-                        width: 150px;
-                        height: 150px;
+                        width: 160px;
+                        height: 160px;
+                    }
+                    @include breakpoint(small) {
+                        width: 120px;
+                        height: 120px;
+                    }
+                    @include breakpoint(smaller) {
+                        width: 90px;
+                        height: 90px;
                     }
 
                     h6 {
                         font-size: 18px;
                         padding: 35px 0 0;
-
+                        @include breakpoint(medium) {
+                            font-size: 14px;
+                        }
+                        @include breakpoint(smaller) {
+                            padding: 15px 0 0;
+                            font-size: 10px;
+                        }
                     }
 
                     span {
@@ -119,6 +210,10 @@
                         left: 50%;
                         transform: translate(-50%, -50%);
                         letter-spacing: 8px;
+                        @include breakpoint(medium) {
+                            font-size: 30px;
+                            letter-spacing: 4px;
+                        }
                     }
 
                     p {
@@ -130,6 +225,16 @@
                         top: 160px;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        @include breakpoint(wide) {
+                            top: 120px;
+                        }
+                        @include breakpoint(small) {
+                            top: 85px;
+                            font-size: 12px;
+                        }
+                        @include breakpoint(smaller) {
+                            top: 70px;
+                        }
                     }
 
                     &:first-child {
@@ -143,12 +248,23 @@
                         span {
                             font-size: 90px;
                             color: $crayola;
+                            @include breakpoint(medium) {
+                                font-size: 35px;
+                            }
                         }
 
                         p {
                             top: 165px;
+                            @include breakpoint(wide) {
+                                top: 130px;
+                            }
+                            @include breakpoint(small) {
+                                top: 85px;
+                            }
+                            @include breakpoint (smaller){
+                                top: 70px;
+                            }
                         }
-
                     }
                 }
             }
