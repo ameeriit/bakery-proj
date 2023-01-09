@@ -140,3 +140,29 @@ $(".slider-primary").slick({
     },
   ],
 });
+
+
+
+
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+
+$('.slider-jibarito-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-jibarito-nav'
+});
+$('.slider-jibarito-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-jibarito-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  vertical: true,
+  verticalSwiping: true
+});
