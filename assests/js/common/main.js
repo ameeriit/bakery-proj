@@ -60,14 +60,6 @@ var swiper = new Swiper(".mySwiper", {
     stretch: 380,
     depth: 100,
     slideShadows: true,
-    breakpoints: {
-      // when window width is >= 320px
-      // 600: {
-      //   rotate: 0,
-      //   stretch: 200,
-      //   depth: 100,
-      // },
-    }
   },
   pagination: {
     el: ".swiper-pagination",
@@ -139,30 +131,4 @@ $(".slider-primary").slick({
       },
     },
   ],
-});
-
-
-
-
-
-
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
-
-
-$('.slider-jibarito-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.slider-jibarito-nav'
-});
-$('.slider-jibarito-nav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.slider-jibarito-for',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true,
-  vertical: true,
-  verticalSwiping: true
 });

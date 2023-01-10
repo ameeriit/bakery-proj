@@ -71,7 +71,7 @@
                     color: $cafeau-laita;
                     font-weight: 700;
                     @include breakpoint(medium) {
-                        display: none;
+                        font-size: 12px;
                     }
                 }
 
